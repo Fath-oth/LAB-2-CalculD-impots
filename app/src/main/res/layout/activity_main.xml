@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcul des impôts locaux"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Nom" />
+    <EditText android:id="@+id/input_name" android:layout_width="match_parent" android:layout_height="wrap_content" />
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Adresse" />
+    <EditText android:id="@+id/input_adr" android:layout_width="match_parent" android:layout_height="wrap_content" />
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Surface" />
+    <EditText android:id="@+id/input_surf" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="number" />
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Nombre de pièces" />
+    <EditText android:id="@+id/input_pieces" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="number" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <CheckBox android:id="@+id/checkbox_pisc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Piscine" />
+        <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1" />
+        <Button android:id="@+id/button_calcule" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Calcul" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp" />
+
+</LinearLayout>
